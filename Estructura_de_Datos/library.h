@@ -13,10 +13,12 @@ class Library{
         double getInteres();
         double getSaldo();
 
-        void setNomCuenta();
-        void setNumCuenta();
-        void setInteres();
-        void setSaldo();
+        void setNomCuenta(std::string nombreCuenta);
+        void setNumCuenta(std::string numCuneta);
+        void setInteres(double tipo);
+
+        void depositar(double cantidad);
+        void retirar(double cantidad);
 
     private:
         std::string nombreCuenta, numCuenta;
